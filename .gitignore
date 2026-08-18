@@ -1,0 +1,19 @@
+# Raw archive downloads are never committed. They are large, they belong to
+# their original publishers, and every one of them is re-fetchable from the
+# DOI / URL recorded in data_sources/SOURCES.md. Reproducibility comes from
+# the fetch scripts, not from vendoring other people's data.
+data/raw/
+data/interim/
+*.zip
+*.xlsx
+*.parquet
+*.sqlite3
+*.db
+
+# Derived results ARE committed (they are small and they are the point):
+!results/**
+
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
