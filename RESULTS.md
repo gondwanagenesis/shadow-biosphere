@@ -10,7 +10,7 @@ Run 2026-08-18. Honest status of all five channels, including what was not done.
 | C2 racemization | ✅ 1,380 samples, 10 datasets | ✅ | ✅ rho=+0.80 | **KILLED** (underpowered: 10 informative samples) |
 | C3 metabolomics | ⬜ 4 of 8 APIs broken | ⬜ | — | Blocked |
 | C4 Raman | ⬜ no public D₂O archive found | ⬜ | — | Blocked |
-| C5 single-cell XRF | ⬜ sources audited | ⬜ | — | Not run |
+| C5 single-cell XRF | ❌ only a culture dataset discoverable | ⬜ | — | **BLOCKED** — discriminator survives, data unreachable |
 | C6a generalization | ✅ 141 py-GC-MS runs | ✅ | ✅ baseline 0.827 | **GENERALIZES** (9.3 pp; first run said the opposite) |
 | C6c residual mining | ✅ same archive | ✅ | ❌ fails by 2 pp | **INCONCLUSIVE** — archive too small |
 | C6b conjunction | ❌ ~160 of 406 reconstructable, noisy | ⬜ | — | **BLOCKED** — see corrected audit |
@@ -118,6 +118,16 @@ routinely operates outside it. This predicts that *any* purely chemical shadow
 marker will have much less discriminating power than it appears to, and argues
 for moving toward relational or organisational signatures, where the canonical
 null is genuinely narrow.
+
+## The selection-step problem
+
+Every physics-aperture channel examined has a human or algorithmic selection step
+upstream of the archive, and that step removes precisely the anomalous objects the
+channel was chosen to detect. C1: 18% of particles discarded at gating. C5: SXRF
+requires an analyst to optically identify a cell before measuring it, so a
+non-cell-looking particle is never measured and a zero-P cell may be recorded as a
+failed measurement. In both cases **the discard happens before the dataset
+exists**, so no reanalysis can recover it.
 
 ## Meta-finding
 
