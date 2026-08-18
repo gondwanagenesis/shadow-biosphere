@@ -1,5 +1,7 @@
 # Results
 
+> **All eight channels are now resolved.** Synthesis in [CONCLUSIONS.md](CONCLUSIONS.md).
+
 Run 2026-08-18. Honest status of all five channels, including what was not done.
 
 ## Summary
@@ -16,7 +18,7 @@ Run 2026-08-18. Honest status of all five channels, including what was not done.
 | C6b conjunction | ❌ ~160 of 406 reconstructable, noisy | ⬜ | — | **BLOCKED** — see corrected audit |
 | C6d deep time | ❌ 6 of 82 Archean have public raw data | ⬜ | — | **BLOCKED** — firmest half of the finding |
 | C7 amino-acid alphabet | n/a | n/a | — | **KILLED ON DESIGN** — AIB/isovaline are fungal peptaibol markers |
-| C8 electrochemical | ⬜ | ⬜ | — | Not run |
+| C8 electrochemical | n/a | n/a | — | **KILLED ON DESIGN** — detects life, not *whose* life |
 
 **No channel has produced a shadow-life candidate.**
 

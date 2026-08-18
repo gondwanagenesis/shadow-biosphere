@@ -7,8 +7,10 @@ This repository is the search, its pre-registered kill tests, its source audit,
 and its results — including the negative ones and one caught methodological
 failure.
 
-**Current status: 2 of 8 channels run to completion. Both are killed by their
-own pre-registered criteria.** See [RESULTS.md](RESULTS.md).
+**Status: all 8 channels resolved — 4 killed, 1 inconclusive, 3 blocked with
+specific reasons. Zero shadow-life candidates, as expected. The result is an
+account of why archive-based detection fails, in three distinct modes.**
+Read [CONCLUSIONS.md](CONCLUSIONS.md) first. See [RESULTS.md](RESULTS.md).
 
 ---
 
@@ -40,10 +42,10 @@ Full reasoning in [METHOD.md](METHOD.md).
 | C2 | Racemization | Is there a D-excess that violates racemization rate ordering? | **KILLED** (underpowered) |
 | C3 | Metabolomics | Reproducible high-selectivity molecules in vacant formula space | Blocked on API repair |
 | C4 | Raman | Metabolically active cells lacking Phe-1004 and phosphate-1095 bands | Blocked, data not public |
-| C5 | Single-cell XRF | Phosphorus-free but C/N-rich cells | Sources audited, not run |
-| C6 | Agnostic ML classifier | Called BIOTIC by a validated classifier, but no canonical biomarkers and no sequence | **Added after literature sweep — now top-ranked** |
-| C7 | Amino-acid alphabet | Selected but on a non-canonical alphabet | Added; reuses C2 data |
-| C8 | Electrochemical disequilibrium | Redox inconsistent with abiotic electrochemistry | Added; closes two LAB pillars |
+| C5 | Single-cell XRF | Phosphorus-free but C/N-rich cells | **BLOCKED** — the last discriminator standing |
+| C6 | Agnostic ML classifier | Called BIOTIC by a validated classifier, but no canonical biomarkers and no sequence | a: generalizes · c: inconclusive · b/d: blocked |
+| C7 | Amino-acid alphabet | Selected but on a non-canonical alphabet | **KILLED ON DESIGN** |
+| C8 | Electrochemical disequilibrium | Redox inconsistent with abiotic electrochemistry | **KILLED ON DESIGN** |
 
 Channels C6–C8 were added after a literature sweep found the original five missed
 a mature body of validated agnostic-biosignature work. See [GAPS.md](GAPS.md).
