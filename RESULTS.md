@@ -13,6 +13,8 @@ Run 2026-08-18. Honest status of all five channels, including what was not done.
 | C5 single-cell XRF | ⬜ sources audited | ⬜ | — | Not run |
 | C6a generalization | ✅ 141 py-GC-MS runs | ✅ | ✅ baseline 0.827 | **GENERALIZES** (9.3 pp; first run said the opposite) |
 | C6c residual mining | ✅ same archive | ✅ | ❌ fails by 2 pp | **INCONCLUSIVE** — archive too small |
+| C6b conjunction | ❌ 11 of 406 usable | ⬜ | — | **BLOCKED** — no public label↔data crosswalk |
+| C6d deep time | ❌ 1 of 82 Archean usable | ⬜ | — | **BLOCKED** — same cause |
 | C7 amino-acid alphabet | ⬜ | ⬜ | — | Not run |
 | C8 electrochemical | ⬜ | ⬜ | — | Not run |
 
