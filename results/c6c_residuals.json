@@ -1,0 +1,44 @@
+{
+  "positive_control_passed": false,
+  "novelty_auc_fossil_vs_labelled": 0.780982905982906,
+  "fossil_flag_rate": 0.2777777777777778,
+  "persistent_misclassified": [
+    [
+      "alanine",
+      1.0
+    ],
+    [
+      "dglucose",
+      1.0
+    ],
+    [
+      "citron",
+      1.0
+    ],
+    [
+      "collagen",
+      1.0
+    ],
+    [
+      "dna",
+      1.0
+    ],
+    [
+      "hcn53172",
+      1.0
+    ],
+    [
+      "staepi",
+      1.0
+    ],
+    [
+      "rna",
+      1.0
+    ]
+  ],
+  "novelty_threshold_p90": 13.223718480825953,
+  "degeneracy_auc_random_labelled_holdout": 0.5340958605664488,
+  "real_novelty_gap": 0.24688704541645723,
+  "n_pcs": 5,
+  "verdict": "INCONCLUSIVE - cannot recover a KNOWN third class, so no power to detect an unknown one"
+}

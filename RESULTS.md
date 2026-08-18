@@ -11,9 +11,18 @@ Run 2026-08-18. Honest status of all five channels, including what was not done.
 | C3 metabolomics | ⬜ 4 of 8 APIs broken | ⬜ | — | Blocked |
 | C4 Raman | ⬜ no public D₂O archive found | ⬜ | — | Blocked |
 | C5 single-cell XRF | ⬜ sources audited | ⬜ | — | Not run |
+| C6a generalization | ✅ 141 py-GC-MS runs | ✅ | ✅ baseline 0.827 | **GENERALIZES** (9.3 pp; first run said the opposite) |
+| C6c residual mining | ✅ same archive | ✅ | ❌ fails by 2 pp | **INCONCLUSIVE** — archive too small |
+| C7 amino-acid alphabet | ⬜ | ⬜ | — | Not run |
+| C8 electrochemical | ⬜ | ⬜ | — | Not run |
 
-**No channel produced a shadow-life candidate. Two channels are closed. Three
-remain open, and all three are open because of data access rather than science.**
+**No channel has produced a shadow-life candidate.**
+
+Running tally of first-pass results that did not survive their controls: **three
+of three.** C1's clean null (broken by ship-motion variance), C6a's MEMORIZATION
+verdict (broken by class imbalance — the corrected answer was the opposite), and
+C6c's perfect AUC=1.000 novelty detector (broken by covariance degeneracy). Every
+one looked like a finding. None was.
 
 ---
 
