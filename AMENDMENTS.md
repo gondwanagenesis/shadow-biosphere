@@ -57,3 +57,33 @@ Prochlorococcus forward scatter shows 24 h power in ≥ 3 cruises.
 clean null result. It was wrong. The positive control is the only reason that
 was caught, which is the strongest argument in this whole project for keeping
 mandatory controls inside the code rather than in the write-up.
+
+---
+
+## 2026-08-18 — three channels ADDED after a literature sweep
+
+**What happened:** a sweep of the shadow-biosphere and agnostic-biosignature
+literature (see `GAPS.md`) found that the original five channels missed a mature
+body of validated work, including biotic/abiotic classifiers with publicly
+deposited training data.
+
+**Added:**
+
+- **C6** — agnostic ML classifier inverted for the shadow conjunction. Every
+  published agnostic classifier separates biotic from abiotic; none separates our
+  biotic from another biotic. The shadow query is: called BIOTIC with high
+  confidence, no canonical biomarkers, no amplifiable sequence.
+- **C7** — non-protein amino-acid alphabet. Named explicitly by Davies et al.
+  (2009) and runs on the same archived GC-MS data C2 already used.
+- **C8** — electrochemical disequilibrium / energy transfer, closing the two
+  Laboratory for Agnostic Biosignatures pillars the original design left open.
+
+**Why this is an amendment and not a rewrite:** the original five pre-registered
+kill tests stand unchanged and their verdicts are unaffected. C6–C8 get their own
+pre-registered kill tests in `PREREGISTRATION_C6_C8.md`, to be committed before
+any of them is run, under the same rule as the original.
+
+**Honest note:** C6 is a stronger channel than anything in the original set,
+because it inherits a validated classifier and a published positive control
+instead of requiring both to be built and defended here. The original design's
+contribution is the conjunction operator, not the individual channels.
