@@ -1,0 +1,1333 @@
+{
+  "positive_control_passed": true,
+  "positive_control_detail": [
+    [
+      "DeepDOM",
+      9.994061444590671e-55
+    ],
+    [
+      "KM1712",
+      1.0
+    ],
+    [
+      "KM1713",
+      1.8241779642912104e-21
+    ],
+    [
+      "MGL1704",
+      2.9648775996611975e-33
+    ],
+    [
+      "SCOPE_16",
+      2.465554794203916e-28
+    ],
+    [
+      "SCOPE_2",
+      3.655472418888363e-05
+    ],
+    [
+      "Thompson_12",
+      0.1616306580088466
+    ],
+    [
+      "Thompson_9",
+      0.005402364067245941
+    ],
+    [
+      "Tokyo_1",
+      1.0
+    ],
+    [
+      "Tokyo_2",
+      1.0
+    ],
+    [
+      "Tokyo_3",
+      0.0009957398186725718
+    ]
+  ],
+  "verdict": "interpretable",
+  "cruises": [
+    {
+      "cruise": "DeepDOM",
+      "n_hours": 962,
+      "n_hours_with_phys": 934,
+      "total_particles": 57011532,
+      "pops": {
+        "prochloro": {
+          "n_particles": 48971824,
+          "mean_fraction": 0.8429018036629493,
+          "abundance_fraction": {
+            "power": 0.08105496461943529,
+            "fap": 2.487547905306182e-13,
+            "peak_period_h": 23.979014864470997,
+            "n": 917,
+            "diel_amplitude": 0.017359194305514133,
+            "diel_phase_LST_h": 17.08375640778782
+          },
+          "mean_fsc": {
+            "power": 0.25516042978055975,
+            "fap": 9.994061444590671e-55,
+            "peak_period_h": 23.960857409133272,
+            "n": 917,
+            "diel_amplitude": 2.0157539763243872,
+            "diel_phase_LST_h": 18.85058352744045
+          },
+          "after_physics_deconfound": {
+            "power": 0.07840764186016924,
+            "fap": 9.096621047456527e-13,
+            "peak_period_h": 23.960857409133272,
+            "n": 917,
+            "physics_R2": 0.010128671531377975
+          }
+        },
+        "synecho": {
+          "n_particles": 1522216,
+          "mean_fraction": 0.03016837539801317,
+          "abundance_fraction": {
+            "power": 0.021139479868883204,
+            "fap": 0.3044386547569634,
+            "peak_period_h": 62.70731707317072,
+            "n": 934,
+            "diel_amplitude": 0.003488454219125558,
+            "diel_phase_LST_h": 6.848787895994922
+          },
+          "mean_fsc": {
+            "power": 0.13882189612626353,
+            "fap": 1.2637250844381328e-26,
+            "peak_period_h": 24.033652722598735,
+            "n": 934,
+            "diel_amplitude": 8.810186807511139,
+            "diel_phase_LST_h": 14.935687713668855
+          },
+          "after_physics_deconfound": {
+            "power": 0.024675545539151838,
+            "fap": 0.07030058530151263,
+            "peak_period_h": 62.45976313392044,
+            "n": 934,
+            "physics_R2": 0.11365208110045766
+          }
+        },
+        "picoeuk": {
+          "n_particles": 388521,
+          "mean_fraction": 0.00860500472680334,
+          "abundance_fraction": {
+            "power": 0.005914375201414725,
+            "fap": 1.0,
+            "peak_period_h": 47.39716557207051,
+            "n": 933,
+            "diel_amplitude": 0.0005122575026553302,
+            "diel_phase_LST_h": 9.254508525405743
+          },
+          "mean_fsc": {
+            "power": 0.24415129635865918,
+            "fap": 8.677008116628705e-53,
+            "peak_period_h": 24.033652722598735,
+            "n": 933,
+            "diel_amplitude": 111.91566554974861,
+            "diel_phase_LST_h": 15.351521489624856
+          },
+          "after_physics_deconfound": {
+            "power": 0.0023545031568615645,
+            "fap": 1.0,
+            "peak_period_h": 47.39716557207051,
+            "n": 933,
+            "physics_R2": 0.0229941748223208
+          }
+        },
+        "unknown": {
+          "n_particles": 6110255,
+          "mean_fraction": 0.13326250252376165,
+          "abundance_fraction": {
+            "power": 0.04202280357980561,
+            "fap": 2.2599554693279974e-05,
+            "peak_period_h": 23.906549660022083,
+            "n": 934,
+            "diel_amplitude": 0.01974311885638171,
+            "diel_phase_LST_h": 5.603275715933096
+          },
+          "mean_fsc": {
+            "power": 0.053047734151904044,
+            "fap": 1.1670705166751318e-07,
+            "peak_period_h": 24.088540141711075,
+            "n": 934,
+            "diel_amplitude": 4.155962452214812,
+            "diel_phase_LST_h": 16.72409203730507
+          },
+          "after_physics_deconfound": {
+            "power": 0.041093328376255775,
+            "fap": 3.508200071134717e-05,
+            "peak_period_h": 23.906549660022083,
+            "n": 934,
+            "physics_R2": 0.024239389697348734
+          }
+        }
+      }
+    },
+    {
+      "cruise": "KM1712",
+      "n_hours": 620,
+      "n_hours_with_phys": 572,
+      "total_particles": 12450980,
+      "pops": {
+        "prochloro": {
+          "n_particles": 6226593,
+          "mean_fraction": 0.8044604846569248,
+          "abundance_fraction": {
+            "power": 0.0020308346957554385,
+            "fap": 1.0,
+            "peak_period_h": 57.157148812005005,
+            "n": 303,
+            "diel_amplitude": 0.008487174833767408,
+            "diel_phase_LST_h": 12.546943978231
+          },
+          "mean_fsc": {
+            "power": 0.01639205005900834,
+            "fap": 1.0,
+            "peak_period_h": 85.15007244876838,
+            "n": 303,
+            "diel_amplitude": 39.1968481623166,
+            "diel_phase_LST_h": 19.85065185503159
+          },
+          "after_physics_deconfound": {
+            "power": 0.001282390978376132,
+            "fap": 1.0,
+            "peak_period_h": 57.57312806158152,
+            "n": 303,
+            "physics_R2": 0.022367562044262268
+          }
+        },
+        "synecho": {
+          "n_particles": 369665,
+          "mean_fraction": 0.04462110286443678,
+          "abundance_fraction": {
+            "power": 0.008865396050806452,
+            "fap": 1.0,
+            "peak_period_h": 55.45430035049879,
+            "n": 566,
+            "diel_amplitude": 0.0077905135356593986,
+            "diel_phase_LST_h": 5.151730030508188
+          },
+          "mean_fsc": {
+            "power": 0.03544773441912779,
+            "fap": 0.16346479262654307,
+            "peak_period_h": 23.62101636520241,
+            "n": 566,
+            "diel_amplitude": 8.178812699807375,
+            "diel_phase_LST_h": 19.38992916783385
+          },
+          "after_physics_deconfound": {
+            "power": 0.008358636072018023,
+            "fap": 1.0,
+            "peak_period_h": 55.45430035049879,
+            "n": 566,
+            "physics_R2": 0.011062385958690912
+          }
+        },
+        "picoeuk": {
+          "n_particles": 431184,
+          "mean_fraction": 0.06341674031213325,
+          "abundance_fraction": {
+            "power": 0.010762401995906959,
+            "fap": 1.0,
+            "peak_period_h": 45.951742627345844,
+            "n": 567,
+            "diel_amplitude": 0.005068848100132636,
+            "diel_phase_LST_h": 13.369283042501845
+          },
+          "mean_fsc": {
+            "power": 0.16561051516425057,
+            "fap": 7.201261944952887e-19,
+            "peak_period_h": 23.960857409133272,
+            "n": 567,
+            "diel_amplitude": 161.51760027459184,
+            "diel_phase_LST_h": 17.48680036487913
+          },
+          "after_physics_deconfound": {
+            "power": 0.0018344087286169797,
+            "fap": 1.0,
+            "peak_period_h": 45.951742627345844,
+            "n": 567,
+            "physics_R2": 0.017645653383154714
+          }
+        },
+        "unknown": {
+          "n_particles": 5414515,
+          "mean_fraction": 0.4659814472215245,
+          "abundance_fraction": {
+            "power": 0.0052198115380114474,
+            "fap": 1.0,
+            "peak_period_h": 57.46856663872591,
+            "n": 572,
+            "diel_amplitude": 0.012409483878480534,
+            "diel_phase_LST_h": 20.989705352334553
+          },
+          "mean_fsc": {
+            "power": 0.0022802166148228266,
+            "fap": 1.0,
+            "peak_period_h": 60.43190832966065,
+            "n": 572,
+            "diel_amplitude": 25.60393586709235,
+            "diel_phase_LST_h": 23.551166964104826
+          },
+          "after_physics_deconfound": {
+            "power": 0.0027414139121094984,
+            "fap": 1.0,
+            "peak_period_h": 57.46856663872591,
+            "n": 572,
+            "physics_R2": 0.04885892205499298
+          }
+        }
+      }
+    },
+    {
+      "cruise": "KM1713",
+      "n_hours": 488,
+      "n_hours_with_phys": 463,
+      "total_particles": 13675572,
+      "pops": {
+        "prochloro": {
+          "n_particles": 8734676,
+          "mean_fraction": 0.8248519183363873,
+          "abundance_fraction": {
+            "power": 0.04875313848980876,
+            "fap": 0.999999883136251,
+            "peak_period_h": 60.201961071271775,
+            "n": 162,
+            "diel_amplitude": 0.025205857951291967,
+            "diel_phase_LST_h": 6.687974330924197
+          },
+          "mean_fsc": {
+            "power": 0.5055501172359741,
+            "fap": 1.8241779642912104e-21,
+            "peak_period_h": 23.81658175081056,
+            "n": 162,
+            "diel_amplitude": 1.5475954201576183,
+            "diel_phase_LST_h": 17.218148348380197
+          },
+          "after_physics_deconfound": {
+            "power": 0.047655158724058615,
+            "fap": 0.9999999689463211,
+            "peak_period_h": 60.43190832966065,
+            "n": 162,
+            "physics_R2": 0.016330275762899915
+          }
+        },
+        "synecho": {
+          "n_particles": 397772,
+          "mean_fraction": 0.05828805591808833,
+          "abundance_fraction": {
+            "power": 0.007446876442294864,
+            "fap": 1.0,
+            "peak_period_h": 39.87205583018319,
+            "n": 463,
+            "diel_amplitude": 0.0033515313067226126,
+            "diel_phase_LST_h": 20.971400850934714
+          },
+          "mean_fsc": {
+            "power": 0.06768499969682573,
+            "fap": 0.000489026360979424,
+            "peak_period_h": 23.76292530760788,
+            "n": 463,
+            "diel_amplitude": 3.8668264000301837,
+            "diel_phase_LST_h": 15.8100482060001
+          },
+          "after_physics_deconfound": {
+            "power": 0.0038723122264019624,
+            "fap": 1.0,
+            "peak_period_h": 39.87205583018319,
+            "n": 463,
+            "physics_R2": 0.01053771485924515
+          }
+        },
+        "picoeuk": {
+          "n_particles": 616378,
+          "mean_fraction": 0.14272809378516751,
+          "abundance_fraction": {
+            "power": 0.013109106001928416,
+            "fap": 1.0,
+            "peak_period_h": 63.71747211895911,
+            "n": 463,
+            "diel_amplitude": 0.006168492649194288,
+            "diel_phase_LST_h": 15.86630067737395
+          },
+          "mean_fsc": {
+            "power": 0.1542467920546747,
+            "fap": 1.4323626026601134e-13,
+            "peak_period_h": 23.88850174216028,
+            "n": 463,
+            "diel_amplitude": 67.02708394282958,
+            "diel_phase_LST_h": 18.268969104268415
+          },
+          "after_physics_deconfound": {
+            "power": 0.009214792005725956,
+            "fap": 1.0,
+            "peak_period_h": 63.46189447701327,
+            "n": 463,
+            "physics_R2": 0.008099964389223446
+          }
+        },
+        "unknown": {
+          "n_particles": 3922006,
+          "mean_fraction": 0.5096294653918769,
+          "abundance_fraction": {
+            "power": 0.009800641586688802,
+            "fap": 1.0,
+            "peak_period_h": 41.766676819981726,
+            "n": 463,
+            "diel_amplitude": 0.014793949445213986,
+            "diel_phase_LST_h": 12.713084980145736
+          },
+          "mean_fsc": {
+            "power": 0.01676498461583281,
+            "fap": 1.0,
+            "peak_period_h": 34.0755467196819,
+            "n": 463,
+            "diel_amplitude": 7.969805934008535,
+            "diel_phase_LST_h": 20.006506757066937
+          },
+          "after_physics_deconfound": {
+            "power": 0.001277501304861428,
+            "fap": 1.0,
+            "peak_period_h": 41.766676819981726,
+            "n": 463,
+            "physics_R2": 0.0429350858462354
+          }
+        }
+      }
+    },
+    {
+      "cruise": "MGL1704",
+      "n_hours": 388,
+      "n_hours_with_phys": 357,
+      "total_particles": 5778987,
+      "pops": {
+        "prochloro": {
+          "n_particles": 3874814,
+          "mean_fraction": 0.485033960606185,
+          "abundance_fraction": {
+            "power": 0.07800428704682875,
+            "fap": 0.002030617684522584,
+            "peak_period_h": 35.252378095809405,
+            "n": 357,
+            "diel_amplitude": 0.03081306857595926,
+            "diel_phase_LST_h": 20.557282859850538
+          },
+          "mean_fsc": {
+            "power": 0.37806541675004757,
+            "fap": 2.9648775996611975e-33,
+            "peak_period_h": 23.997199859993,
+            "n": 357,
+            "diel_amplitude": 1.4443337956771194,
+            "diel_phase_LST_h": 16.833432948321324
+          },
+          "after_physics_deconfound": {
+            "power": 0.052951934559592004,
+            "fap": 0.17312636207894994,
+            "peak_period_h": 35.252378095809405,
+            "n": 357,
+            "physics_R2": 0.04123643287473788
+          }
+        },
+        "synecho": {
+          "n_particles": 372110,
+          "mean_fraction": 0.09845753138211827,
+          "abundance_fraction": {
+            "power": 0.012517581912957014,
+            "fap": 1.0,
+            "peak_period_h": 42.2124166239097,
+            "n": 357,
+            "diel_amplitude": 0.009856810476457348,
+            "diel_phase_LST_h": 18.95931492427163
+          },
+          "mean_fsc": {
+            "power": 0.1352653069546021,
+            "fap": 3.256483421533343e-08,
+            "peak_period_h": 24.088540141711075,
+            "n": 357,
+            "diel_amplitude": 5.73618656370839,
+            "diel_phase_LST_h": 16.76729757379824
+          },
+          "after_physics_deconfound": {
+            "power": 0.012194947655317936,
+            "fap": 1.0,
+            "peak_period_h": 42.32534211338615,
+            "n": 357,
+            "physics_R2": 0.01651912873396766
+          }
+        },
+        "picoeuk": {
+          "n_particles": 146258,
+          "mean_fraction": 0.05836159226652418,
+          "abundance_fraction": {
+            "power": 0.04252188389525968,
+            "fap": 0.6919471638072909,
+            "peak_period_h": 40.64018968583284,
+            "n": 357,
+            "diel_amplitude": 0.01371785061379694,
+            "diel_phase_LST_h": 5.291837317373268
+          },
+          "mean_fsc": {
+            "power": 0.33498908925536586,
+            "fap": 3.793852114972173e-28,
+            "peak_period_h": 24.088540141711075,
+            "n": 357,
+            "diel_amplitude": 181.71500604505175,
+            "diel_phase_LST_h": 17.80439108712634
+          },
+          "after_physics_deconfound": {
+            "power": 0.04722202997126299,
+            "fap": 0.40583674704385253,
+            "peak_period_h": 40.58806117414899,
+            "n": 357,
+            "physics_R2": 0.06732225153787708
+          }
+        },
+        "unknown": {
+          "n_particles": 1385782,
+          "mean_fraction": 0.3580889149846378,
+          "abundance_fraction": {
+            "power": 0.06283330265506586,
+            "fap": 0.03199633908280483,
+            "peak_period_h": 24.070216500877706,
+            "n": 357,
+            "diel_amplitude": 0.03327213511654647,
+            "diel_phase_LST_h": 9.950917980986127
+          },
+          "mean_fsc": {
+            "power": 8.685474116853356e-05,
+            "fap": 1.0,
+            "peak_period_h": 12.54375800451302,
+            "n": 357,
+            "diel_amplitude": 0.3882348530142901,
+            "diel_phase_LST_h": 20.87602986771997
+          },
+          "after_physics_deconfound": {
+            "power": 0.017816701858827465,
+            "fap": 1.0,
+            "peak_period_h": 28.568650600736163,
+            "n": 357,
+            "physics_R2": 0.04398941153871205
+          }
+        }
+      }
+    },
+    {
+      "cruise": "SCOPE_16",
+      "n_hours": 339,
+      "n_hours_with_phys": 339,
+      "total_particles": 2286040,
+      "pops": {
+        "prochloro": {
+          "n_particles": 1648809,
+          "mean_fraction": 0.6539817270482722,
+          "abundance_fraction": {
+            "power": 0.004026288547486757,
+            "fap": 1.0,
+            "peak_period_h": 36.939655172413794,
+            "n": 339,
+            "diel_amplitude": 0.009536309564125515,
+            "diel_phase_LST_h": 14.48536650840462
+          },
+          "mean_fsc": {
+            "power": 0.35085815778784496,
+            "fap": 2.465554794203916e-28,
+            "peak_period_h": 23.979014864470997,
+            "n": 339,
+            "diel_amplitude": 2.076337848035546,
+            "diel_phase_LST_h": 17.28260705336116
+          },
+          "after_physics_deconfound": {
+            "power": 0.0016728140712377168,
+            "fap": 1.0,
+            "peak_period_h": 36.725292384608515,
+            "n": 339,
+            "physics_R2": 0.013873669272871259
+          }
+        },
+        "synecho": {
+          "n_particles": 175158,
+          "mean_fraction": 0.08364027350900513,
+          "abundance_fraction": {
+            "power": 0.007824808932847658,
+            "fap": 1.0,
+            "peak_period_h": 75.58985667034179,
+            "n": 339,
+            "diel_amplitude": 0.005992057615386267,
+            "diel_phase_LST_h": 15.565494450373352
+          },
+          "mean_fsc": {
+            "power": 0.37551710829053647,
+            "fap": 3.885694767398183e-31,
+            "peak_period_h": 24.070216500877706,
+            "n": 339,
+            "diel_amplitude": 6.790789359176596,
+            "diel_phase_LST_h": 16.75382138578143
+          },
+          "after_physics_deconfound": {
+            "power": 0.005762233154274559,
+            "fap": 1.0,
+            "peak_period_h": 76.68903803131991,
+            "n": 339,
+            "physics_R2": 0.022750137261692727
+          }
+        },
+        "picoeuk": {
+          "n_particles": 168629,
+          "mean_fraction": 0.10384006404613308,
+          "abundance_fraction": {
+            "power": 0.017242255659062948,
+            "fap": 1.0,
+            "peak_period_h": 29.14759441649543,
+            "n": 339,
+            "diel_amplitude": 0.00650683616801189,
+            "diel_phase_LST_h": 8.439319487016105
+          },
+          "mean_fsc": {
+            "power": 0.516072079418622,
+            "fap": 1.2869723513601865e-49,
+            "peak_period_h": 24.070216500877706,
+            "n": 339,
+            "diel_amplitude": 92.68867720378695,
+            "diel_phase_LST_h": 17.109534064759234
+          },
+          "after_physics_deconfound": {
+            "power": 0.012183552458663585,
+            "fap": 1.0,
+            "peak_period_h": 42.32534211338615,
+            "n": 339,
+            "physics_R2": 0.04022069319273047
+          }
+        },
+        "unknown": {
+          "n_particles": 293444,
+          "mean_fraction": 0.1585379353965895,
+          "abundance_fraction": {
+            "power": 0.011598967486074842,
+            "fap": 1.0,
+            "peak_period_h": 45.75241908575242,
+            "n": 339,
+            "diel_amplitude": 0.008853930738759874,
+            "diel_phase_LST_h": 3.7066431878261907
+          },
+          "mean_fsc": {
+            "power": 0.018771513016832598,
+            "fap": 1.0,
+            "peak_period_h": 30.643623361144222,
+            "n": 339,
+            "diel_amplitude": 3.7368601446510357,
+            "diel_phase_LST_h": 19.319647305816655
+          },
+          "after_physics_deconfound": {
+            "power": 0.009396093878470886,
+            "fap": 1.0,
+            "peak_period_h": 44.52911885689543,
+            "n": 339,
+            "physics_R2": 0.03188170604058849
+          }
+        }
+      }
+    },
+    {
+      "cruise": "SCOPE_2",
+      "n_hours": 194,
+      "n_hours_with_phys": 193,
+      "total_particles": 6392868,
+      "pops": {
+        "prochloro": {
+          "n_particles": 5670769,
+          "mean_fraction": 0.8789753596482286,
+          "abundance_fraction": {
+            "power": 0.07791126623958668,
+            "fap": 0.7473058964670392,
+            "peak_period_h": 27.96274896336075,
+            "n": 169,
+            "diel_amplitude": 0.038761046350136205,
+            "diel_phase_LST_h": 14.362389566344858
+          },
+          "mean_fsc": {
+            "power": 0.1929000768006602,
+            "fap": 3.655472418888363e-05,
+            "peak_period_h": 23.81658175081056,
+            "n": 169,
+            "diel_amplitude": 0.7383292357896671,
+            "diel_phase_LST_h": 18.43861077312799
+          },
+          "after_physics_deconfound": {
+            "power": 0.020578095974492488,
+            "fap": 1.0,
+            "peak_period_h": 26.824910335833064,
+            "n": 169,
+            "physics_R2": 0.12942201856674762
+          }
+        },
+        "synecho": {
+          "n_particles": 209878,
+          "mean_fraction": 0.07744086668545287,
+          "abundance_fraction": {
+            "power": 0.05395410031878903,
+            "fap": 0.998672199732971,
+            "peak_period_h": 14.747786182913273,
+            "n": 188,
+            "diel_amplitude": 0.026509556400984093,
+            "diel_phase_LST_h": 22.637377784010507
+          },
+          "mean_fsc": {
+            "power": 0.23576880809393702,
+            "fap": 4.110540810328792e-08,
+            "peak_period_h": 24.670744872256208,
+            "n": 188,
+            "diel_amplitude": 6.0456688887642684,
+            "diel_phase_LST_h": 17.35808228365069
+          },
+          "after_physics_deconfound": {
+            "power": 0.01687713036276028,
+            "fap": 1.0,
+            "peak_period_h": 27.358339984038306,
+            "n": 188,
+            "physics_R2": 0.17096939663555166
+          }
+        },
+        "picoeuk": {
+          "n_particles": 137524,
+          "mean_fraction": 0.06700865677168032,
+          "abundance_fraction": {
+            "power": 0.06991453793891703,
+            "fap": 0.783779264037025,
+            "peak_period_h": 36.05574546410728,
+            "n": 189,
+            "diel_amplitude": 0.04942591590190119,
+            "diel_phase_LST_h": 10.61759857477344
+          },
+          "mean_fsc": {
+            "power": 0.15915450027096062,
+            "fap": 0.0002048547886125465,
+            "peak_period_h": 24.57494473982914,
+            "n": 189,
+            "diel_amplitude": 42.176859917076435,
+            "diel_phase_LST_h": 17.224997476943837
+          },
+          "after_physics_deconfound": {
+            "power": 0.027768297717656057,
+            "fap": 1.0,
+            "peak_period_h": 41.71162036098155,
+            "n": 189,
+            "physics_R2": 0.13457178344469367
+          }
+        },
+        "unknown": {
+          "n_particles": 374697,
+          "mean_fraction": 0.089272772812107,
+          "abundance_fraction": {
+            "power": 0.029088649453488942,
+            "fap": 1.0,
+            "peak_period_h": 47.185134205092915,
+            "n": 193,
+            "diel_amplitude": 0.02317959920108564,
+            "diel_phase_LST_h": 0.44475419656726833
+          },
+          "mean_fsc": {
+            "power": 0.019317644063273527,
+            "fap": 1.0,
+            "peak_period_h": 11.425079850020829,
+            "n": 193,
+            "diel_amplitude": 24.47846407507167,
+            "diel_phase_LST_h": 3.9357954995563453
+          },
+          "after_physics_deconfound": {
+            "power": 0.0010525038688928767,
+            "fap": 1.0,
+            "peak_period_h": 47.25560022975301,
+            "n": 193,
+            "physics_R2": 0.057164610058038745
+          }
+        }
+      }
+    },
+    {
+      "cruise": "Thompson_1",
+      "skipped": "too few usable hours",
+      "n_hours": 60
+    },
+    {
+      "cruise": "Thompson_12",
+      "n_hours": 171,
+      "n_hours_with_phys": 169,
+      "total_particles": 2751621,
+      "pops": {
+        "prochloro": {
+          "n_particles": 1780525,
+          "mean_fraction": 0.6708078360706736,
+          "abundance_fraction": {
+            "power": 0.09983077385569156,
+            "fap": 0.7310707003196457,
+            "peak_period_h": 37.59802577460926,
+            "n": 126,
+            "diel_amplitude": 0.029037595875183436,
+            "diel_phase_LST_h": 17.290772711342342
+          },
+          "mean_fsc": {
+            "power": 0.13091275568760893,
+            "fap": 0.1616306580088466,
+            "peak_period_h": 24.162114537444932,
+            "n": 126,
+            "diel_amplitude": 3.523018052563841,
+            "diel_phase_LST_h": 17.25582018801469
+          },
+          "after_physics_deconfound": {
+            "power": 0.11036791611821362,
+            "fap": 0.4899625386856455,
+            "peak_period_h": 37.59802577460926,
+            "n": 126,
+            "physics_R2": 0.06325778659721859
+          }
+        },
+        "synecho": {
+          "n_particles": 484695,
+          "mean_fraction": 0.23535779084969946,
+          "abundance_fraction": {
+            "power": 0.08634471769262855,
+            "fap": 0.4940281370185682,
+            "peak_period_h": 35.48960400310586,
+            "n": 169,
+            "diel_amplitude": 0.05582293852136048,
+            "diel_phase_LST_h": 9.472463404063413
+          },
+          "mean_fsc": {
+            "power": 0.05512246821251622,
+            "fap": 0.9998346873853681,
+            "peak_period_h": 69.45129157521527,
+            "n": 169,
+            "diel_amplitude": 3.7864176888973833,
+            "diel_phase_LST_h": 17.68636152949083
+          },
+          "after_physics_deconfound": {
+            "power": 0.0021296141986863566,
+            "fap": 1.0,
+            "peak_period_h": 28.136798905608753,
+            "n": 169,
+            "physics_R2": 0.6801202693730898
+          }
+        },
+        "picoeuk": {
+          "n_particles": 118917,
+          "mean_fraction": 0.06463882452602673,
+          "abundance_fraction": {
+            "power": 0.14553187199092543,
+            "fap": 0.003517154106591551,
+            "peak_period_h": 24.088540141711075,
+            "n": 169,
+            "diel_amplitude": 0.011730380516931298,
+            "diel_phase_LST_h": 9.79824114792491
+          },
+          "mean_fsc": {
+            "power": 0.025293031460623686,
+            "fap": 1.0,
+            "peak_period_h": 6.031140955341172,
+            "n": 169,
+            "diel_amplitude": 19.25916219609944,
+            "diel_phase_LST_h": 20.074890176812495
+          },
+          "after_physics_deconfound": {
+            "power": 0.03286012481041417,
+            "fap": 1.0,
+            "peak_period_h": 22.041472432084873,
+            "n": 169,
+            "physics_R2": 0.284031932345139
+          }
+        },
+        "unknown": {
+          "n_particles": 366865,
+          "mean_fraction": 0.19955935722143073,
+          "abundance_fraction": {
+            "power": 0.06874473449773187,
+            "fap": 0.9468291948681178,
+            "peak_period_h": 30.673327865185293,
+            "n": 169,
+            "diel_amplitude": 0.05973163572884903,
+            "diel_phase_LST_h": 23.732956240456165
+          },
+          "mean_fsc": {
+            "power": 0.08999979725905506,
+            "fap": 0.3932767842861645,
+            "peak_period_h": 43.789652969980835,
+            "n": 169,
+            "diel_amplitude": 5.778660814887593,
+            "diel_phase_LST_h": 17.40455263664084
+          },
+          "after_physics_deconfound": {
+            "power": 0.05236542460451307,
+            "fap": 0.9999794696675119,
+            "peak_period_h": 27.240580094033508,
+            "n": 169,
+            "physics_R2": 0.7080032065036216
+          }
+        }
+      }
+    },
+    {
+      "cruise": "Thompson_9",
+      "n_hours": 189,
+      "n_hours_with_phys": 187,
+      "total_particles": 1040790,
+      "pops": {
+        "prochloro": {
+          "n_particles": 803056,
+          "mean_fraction": 0.7739999149906507,
+          "abundance_fraction": {
+            "power": 0.11365331090252744,
+            "fap": 0.05311001006878627,
+            "peak_period_h": 25.121221374045803,
+            "n": 172,
+            "diel_amplitude": 0.036380756393566,
+            "diel_phase_LST_h": 15.608904705245248
+          },
+          "mean_fsc": {
+            "power": 0.1387170919231298,
+            "fap": 0.005402364067245941,
+            "peak_period_h": 24.23613975136982,
+            "n": 172,
+            "diel_amplitude": 16.5483250638717,
+            "diel_phase_LST_h": 16.02314802379066
+          },
+          "after_physics_deconfound": {
+            "power": 0.12858898204573088,
+            "fap": 0.013828478823008005,
+            "peak_period_h": 25.261606484893147,
+            "n": 172,
+            "physics_R2": 0.24083051617420215
+          }
+        },
+        "synecho": {
+          "n_particles": 58638,
+          "mean_fraction": 0.07327775222286324,
+          "abundance_fraction": {
+            "power": 0.044763798753233636,
+            "fap": 0.9999995929966482,
+            "peak_period_h": 96.0,
+            "n": 187,
+            "diel_amplitude": 0.026982771221779153,
+            "diel_phase_LST_h": 2.381558375904439
+          },
+          "mean_fsc": {
+            "power": 0.011054704625573938,
+            "fap": 1.0,
+            "peak_period_h": 60.316715542522,
+            "n": 187,
+            "diel_amplitude": 3.807056576438231,
+            "diel_phase_LST_h": 11.886993109246033
+          },
+          "after_physics_deconfound": {
+            "power": 0.012994928660916453,
+            "fap": 1.0,
+            "peak_period_h": 96.0,
+            "n": 187,
+            "physics_R2": 0.14768046750582053
+          }
+        },
+        "picoeuk": {
+          "n_particles": 61663,
+          "mean_fraction": 0.08264816616004822,
+          "abundance_fraction": {
+            "power": 0.05148809086956567,
+            "fap": 0.9997433046962739,
+            "peak_period_h": 26.893305439330543,
+            "n": 187,
+            "diel_amplitude": 0.02129496627440778,
+            "diel_phase_LST_h": 23.16294759480776
+          },
+          "mean_fsc": {
+            "power": 0.0003528816431687698,
+            "fap": 1.0,
+            "peak_period_h": 5.992308588742571,
+            "n": 187,
+            "diel_amplitude": 12.245302103712232,
+            "diel_phase_LST_h": 16.589879549886213
+          },
+          "after_physics_deconfound": {
+            "power": 0.006493592152401812,
+            "fap": 1.0,
+            "peak_period_h": 26.870468351949835,
+            "n": 187,
+            "physics_R2": 0.1510142941301149
+          }
+        },
+        "unknown": {
+          "n_particles": 117217,
+          "mean_fraction": 0.13198644653855818,
+          "abundance_fraction": {
+            "power": 0.056217111250966255,
+            "fap": 0.9957801152082125,
+            "peak_period_h": 43.19193616127677,
+            "n": 187,
+            "diel_amplitude": 0.023434348490083017,
+            "diel_phase_LST_h": 8.285608460998048
+          },
+          "mean_fsc": {
+            "power": 0.10094085922165862,
+            "fap": 0.08261456880390405,
+            "peak_period_h": 23.069934383938087,
+            "n": 187,
+            "diel_amplitude": 23.3323758147492,
+            "diel_phase_LST_h": 6.6855659053743794
+          },
+          "after_physics_deconfound": {
+            "power": 0.04745662398469492,
+            "fap": 0.9999917171009133,
+            "peak_period_h": 43.54859199661232,
+            "n": 187,
+            "physics_R2": 0.023235439540304714
+          }
+        }
+      }
+    },
+    {
+      "cruise": "Tokyo_1",
+      "n_hours": 325,
+      "n_hours_with_phys": 270,
+      "total_particles": 876351,
+      "pops": {
+        "prochloro": {
+          "n_particles": 44491,
+          "mean_fraction": 0.04406903206759191,
+          "abundance_fraction": {
+            "power": 0.02658544209991732,
+            "fap": 1.0,
+            "peak_period_h": 18.22111977321049,
+            "n": 263,
+            "diel_amplitude": 0.008842958727650278,
+            "diel_phase_LST_h": 7.10996611061206
+          },
+          "mean_fsc": {
+            "power": 0.02414796487040226,
+            "fap": 1.0,
+            "peak_period_h": 23.15433975008443,
+            "n": 263,
+            "diel_amplitude": 7.828826431297635,
+            "diel_phase_LST_h": 18.219880963288425
+          },
+          "after_physics_deconfound": {
+            "power": 0.015221959577765296,
+            "fap": 1.0,
+            "peak_period_h": 18.231618135886187,
+            "n": 263,
+            "physics_R2": 0.05611678545544818
+          }
+        },
+        "synecho": {
+          "n_particles": 342591,
+          "mean_fraction": 0.37870194606555857,
+          "abundance_fraction": {
+            "power": 0.006910945502425152,
+            "fap": 1.0,
+            "peak_period_h": 17.145000625182345,
+            "n": 270,
+            "diel_amplitude": 0.03633407803851491,
+            "diel_phase_LST_h": 18.297336877784133
+          },
+          "mean_fsc": {
+            "power": 0.07106014881589723,
+            "fap": 0.1110118644385358,
+            "peak_period_h": 23.674033149171272,
+            "n": 270,
+            "diel_amplitude": 8.721971249466167,
+            "diel_phase_LST_h": 16.310785890009825
+          },
+          "after_physics_deconfound": {
+            "power": 0.00799957848013604,
+            "fap": 1.0,
+            "peak_period_h": 17.0802192326856,
+            "n": 270,
+            "physics_R2": 0.037058746829168654
+          }
+        },
+        "picoeuk": {
+          "n_particles": 287656,
+          "mean_fraction": 0.3357511588730584,
+          "abundance_fraction": {
+            "power": 0.025077674346462242,
+            "fap": 1.0,
+            "peak_period_h": 34.409033877038894,
+            "n": 270,
+            "diel_amplitude": 0.02190401679437486,
+            "diel_phase_LST_h": 4.525302435619163
+          },
+          "mean_fsc": {
+            "power": 0.021265316807663016,
+            "fap": 1.0,
+            "peak_period_h": 33.04361796128203,
+            "n": 270,
+            "diel_amplitude": 10.769846935167733,
+            "diel_phase_LST_h": 14.073465397600888
+          },
+          "after_physics_deconfound": {
+            "power": 0.020894840799988525,
+            "fap": 1.0,
+            "peak_period_h": 34.22296173044925,
+            "n": 270,
+            "physics_R2": 0.02558219607749601
+          }
+        },
+        "unknown": {
+          "n_particles": 201445,
+          "mean_fraction": 0.24239169557856755,
+          "abundance_fraction": {
+            "power": 0.011308743700425212,
+            "fap": 1.0,
+            "peak_period_h": 40.536066219944814,
+            "n": 270,
+            "diel_amplitude": 0.010222983759505483,
+            "diel_phase_LST_h": 10.350506828073694
+          },
+          "mean_fsc": {
+            "power": 0.01620366313338557,
+            "fap": 1.0,
+            "peak_period_h": 19.18209372814176,
+            "n": 270,
+            "diel_amplitude": 11.641193266433662,
+            "diel_phase_LST_h": 22.06962691868754
+          },
+          "after_physics_deconfound": {
+            "power": 0.007069326270694489,
+            "fap": 1.0,
+            "peak_period_h": 40.536066219944814,
+            "n": 270,
+            "physics_R2": 0.005420169185217261
+          }
+        }
+      }
+    },
+    {
+      "cruise": "Tokyo_2",
+      "n_hours": 329,
+      "n_hours_with_phys": 289,
+      "total_particles": 1506726,
+      "pops": {
+        "prochloro": {
+          "n_particles": 385842,
+          "mean_fraction": 0.26006808383960645,
+          "abundance_fraction": {
+            "power": 0.07760575821463916,
+            "fap": 0.024859051862507874,
+            "peak_period_h": 51.90662460567823,
+            "n": 289,
+            "diel_amplitude": 0.01971375491165858,
+            "diel_phase_LST_h": 16.744024991688367
+          },
+          "mean_fsc": {
+            "power": 0.01934489996853206,
+            "fap": 1.0,
+            "peak_period_h": 85.6108220603538,
+            "n": 289,
+            "diel_amplitude": 32.86862112919021,
+            "diel_phase_LST_h": 20.086653573702858
+          },
+          "after_physics_deconfound": {
+            "power": 0.08753565493071115,
+            "fap": 0.005701465245651636,
+            "peak_period_h": 51.568258743888684,
+            "n": 289,
+            "physics_R2": 0.03656189277254629
+          }
+        },
+        "synecho": {
+          "n_particles": 462500,
+          "mean_fraction": 0.29025643776640897,
+          "abundance_fraction": {
+            "power": 0.0412353640551426,
+            "fap": 0.9893250053805424,
+            "peak_period_h": 55.35728704077513,
+            "n": 289,
+            "diel_amplitude": 0.033686477743864324,
+            "diel_phase_LST_h": 6.135914005221725
+          },
+          "mean_fsc": {
+            "power": 0.04903146084857347,
+            "fap": 0.7869996816127791,
+            "peak_period_h": 94.56551724137931,
+            "n": 289,
+            "diel_amplitude": 22.64661187018076,
+            "diel_phase_LST_h": 20.698482102135408
+          },
+          "after_physics_deconfound": {
+            "power": 0.034530713583576345,
+            "fap": 0.99998653047461,
+            "peak_period_h": 54.78226128645625,
+            "n": 289,
+            "physics_R2": 0.09148793877472028
+          }
+        },
+        "picoeuk": {
+          "n_particles": 270116,
+          "mean_fraction": 0.2033096201710859,
+          "abundance_fraction": {
+            "power": 0.03511447922591997,
+            "fap": 0.9999688130915614,
+            "peak_period_h": 64.62843676355067,
+            "n": 289,
+            "diel_amplitude": 0.0010043160314014547,
+            "diel_phase_LST_h": 8.047365015495116
+          },
+          "mean_fsc": {
+            "power": 0.08290589637424273,
+            "fap": 0.011380570795373026,
+            "peak_period_h": 23.9246248691404,
+            "n": 289,
+            "diel_amplitude": 34.601782108459474,
+            "diel_phase_LST_h": 21.607100913533955
+          },
+          "after_physics_deconfound": {
+            "power": 0.04000701608233303,
+            "fap": 0.9953309849764916,
+            "peak_period_h": 64.62843676355067,
+            "n": 289,
+            "physics_R2": 0.16449157707187878
+          }
+        },
+        "unknown": {
+          "n_particles": 387917,
+          "mean_fraction": 0.24771225728656066,
+          "abundance_fraction": {
+            "power": 0.06029187612498628,
+            "fap": 0.28106722161713826,
+            "peak_period_h": 39.22944878886134,
+            "n": 287,
+            "diel_amplitude": 0.017095710498761903,
+            "diel_phase_LST_h": 19.177676674859
+          },
+          "mean_fsc": {
+            "power": 0.019017218414573423,
+            "fap": 1.0,
+            "peak_period_h": 29.06726964386659,
+            "n": 287,
+            "diel_amplitude": 12.189165499352473,
+            "diel_phase_LST_h": 16.236700945068467
+          },
+          "after_physics_deconfound": {
+            "power": 0.058641330920582525,
+            "fap": 0.34109313601772195,
+            "peak_period_h": 39.08408551068884,
+            "n": 287,
+            "physics_R2": 0.0034817249942924455
+          }
+        }
+      }
+    },
+    {
+      "cruise": "Tokyo_3",
+      "n_hours": 329,
+      "n_hours_with_phys": 302,
+      "total_particles": 3212813,
+      "pops": {
+        "prochloro": {
+          "n_particles": 1330384,
+          "mean_fraction": 0.32744595992805725,
+          "abundance_fraction": {
+            "power": 0.1439346841235751,
+            "fap": 3.8985974685505986e-07,
+            "peak_period_h": 23.463381245722108,
+            "n": 299,
+            "diel_amplitude": 0.10113945190440986,
+            "diel_phase_LST_h": 14.791033069230595
+          },
+          "mean_fsc": {
+            "power": 0.09592279722505821,
+            "fap": 0.0009957398186725718,
+            "peak_period_h": 23.691758336692967,
+            "n": 299,
+            "diel_amplitude": 14.310714477806675,
+            "diel_phase_LST_h": 15.330148021949439
+          },
+          "after_physics_deconfound": {
+            "power": 0.11434646647882284,
+            "fap": 5.2190713499707525e-05,
+            "peak_period_h": 32.4672454617206,
+            "n": 299,
+            "physics_R2": 0.12383168261543454
+          }
+        },
+        "synecho": {
+          "n_particles": 806397,
+          "mean_fraction": 0.21919850487783857,
+          "abundance_fraction": {
+            "power": 0.033336300545531355,
+            "fap": 0.9999887672680864,
+            "peak_period_h": 49.86181818181818,
+            "n": 299,
+            "diel_amplitude": 0.032347853344017165,
+            "diel_phase_LST_h": 22.84613576001523
+          },
+          "mean_fsc": {
+            "power": 0.08946863735234527,
+            "fap": 0.002743664755115321,
+            "peak_period_h": 23.58580356630927,
+            "n": 299,
+            "diel_amplitude": 11.7902488961941,
+            "diel_phase_LST_h": 15.897961771047244
+          },
+          "after_physics_deconfound": {
+            "power": 0.006272743779310089,
+            "fap": 1.0,
+            "peak_period_h": 49.54950614309804,
+            "n": 299,
+            "physics_R2": 0.03708960013503193
+          }
+        },
+        "picoeuk": {
+          "n_particles": 359876,
+          "mean_fraction": 0.1546143844557319,
+          "abundance_fraction": {
+            "power": 0.12890862210058662,
+            "fap": 4.804002298180368e-06,
+            "peak_period_h": 25.20124977026282,
+            "n": 299,
+            "diel_amplitude": 0.04294949682223023,
+            "diel_phase_LST_h": 6.35267346159643
+          },
+          "mean_fsc": {
+            "power": 0.0987893994824948,
+            "fap": 0.000632675116237381,
+            "peak_period_h": 24.088540141711075,
+            "n": 299,
+            "diel_amplitude": 63.37065059441795,
+            "diel_phase_LST_h": 18.459905352008462
+          },
+          "after_physics_deconfound": {
+            "power": 0.13110916413085433,
+            "fap": 3.336179312453704e-06,
+            "peak_period_h": 25.20124977026282,
+            "n": 299,
+            "physics_R2": 0.028543535584861668
+          }
+        },
+        "unknown": {
+          "n_particles": 716127,
+          "mean_fraction": 0.2987327135167686,
+          "abundance_fraction": {
+            "power": 0.02282662788799245,
+            "fap": 1.0,
+            "peak_period_h": 49.47203848466627,
+            "n": 299,
+            "diel_amplitude": 0.04093135625111989,
+            "diel_phase_LST_h": 2.0964556475772755
+          },
+          "mean_fsc": {
+            "power": 0.016285112878787245,
+            "fap": 1.0,
+            "peak_period_h": 14.392274858302425,
+            "n": 299,
+            "diel_amplitude": 20.963422596230785,
+            "diel_phase_LST_h": 14.993459467138385
+          },
+          "after_physics_deconfound": {
+            "power": 0.023227453846806943,
+            "fap": 1.0,
+            "peak_period_h": 49.088305489260144,
+            "n": 299,
+            "physics_R2": 0.05570039240713898
+          }
+        }
+      }
+    }
+  ]
+}
