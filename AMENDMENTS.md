@@ -87,3 +87,31 @@ any of them is run, under the same rule as the original.
 because it inherits a validated classifier and a published positive control
 instead of requiring both to be built and defended here. The original design's
 contribution is the conjunction operator, not the individual channels.
+
+---
+
+## 2026-08-18 — C6a method corrected mid-run, verdict reversed
+
+**What happened:** the first implementation compared domain-holdout accuracy
+directly against random-fold accuracy, found a 40.6 pp drop, and returned the
+verdict MEMORIZATION — that published agnostic classifiers have memorized
+canonical biochemistry and would discard shadow life as geology.
+
+**Diagnosis:** artifact. Holding out an entire domain makes the test set
+single-class and skews training class balance. Holding out 26 synthetic abiotic
+samples leaves 24 biotic vs 2 abiotic, so the model predicts biotic for
+everything and scores 0.000 on an all-abiotic test set. The metric was measuring
+class imbalance, not domain generalisation.
+
+**Fix:** each domain holdout is now compared against size- and class-matched
+random holdouts, which carry the identical induced imbalance but no domain
+structure. Only the delta is interpreted. Classifier uses balanced class weights.
+
+**Effect:** verdict REVERSED, from MEMORIZATION (40.6 pp) to GENERALIZES
+(9.3 pp, under the pre-registered 15 pp threshold). The synthetic holdout's
+0.000 has a matched-random value of 0.001 — delta ~0, no domain effect at all.
+
+**Note:** the pre-registered positive control (baseline > 0.80) PASSED in both
+versions and did not catch this. That is a real limitation of that gate: it
+verifies sensitivity, not metric validity. Second instance in this project of a
+striking result dissolving under a proper control.
