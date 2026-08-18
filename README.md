@@ -32,12 +32,12 @@ ones intersect at nearly zero.
 
 Full reasoning in [METHOD.md](METHOD.md).
 
-## The five channels
+## The eight channels
 
 | | Channel | Test | Status |
 |---|---|---|---|
 | C1 | Cytometry | Does the discarded unclassified particle gate have its own division rhythm? | **KILLED** |
-| C2 | Racemization | Is there a D-excess that violates racemization rate ordering? | Sources audited, not run |
+| C2 | Racemization | Is there a D-excess that violates racemization rate ordering? | **KILLED** (underpowered) |
 | C3 | Metabolomics | Reproducible high-selectivity molecules in vacant formula space | Blocked on API repair |
 | C4 | Raman | Metabolically active cells lacking Phe-1004 and phosphate-1095 bands | Blocked, data not public |
 | C5 | Single-cell XRF | Phosphorus-free but C/N-rich cells | Sources audited, not run |
@@ -87,7 +87,8 @@ confident, wrong negative result.
 PREREGISTRATION.md      kill tests, locked before any result
 AMENDMENTS.md           every deviation, with reasons
 METHOD.md               aperture/filter framework, conjunction operator
-RESULTS.md              status of all five channels
+RESULTS.md              status of all eight channels
+GAPS.md                 literature sweep: what the original design missed
 data_sources/           probe_sources.py + SOURCES.md (36 endpoints audited)
 channels/cN_*/          fetch + run scripts per channel
 results/                committed derived results
