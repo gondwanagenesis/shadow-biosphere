@@ -115,3 +115,32 @@ structure. Only the delta is interpreted. Classifier uses balanced class weights
 versions and did not catch this. That is a real limitation of that gate: it
 verifies sensitivity, not metric validity. Second instance in this project of a
 striking result dissolving under a proper control.
+
+---
+
+## 2026-08-18 — C6 data audit CORRECTED: the "3%" figure was wrong
+
+**What was published:** that only 11 of 406 labelled samples (3%) have public raw
+data, and that "no public artifact links deposited spectra to published labels."
+
+**What was wrong:** the 3% came from automated *exact-filename* matching. That
+measures effortless joinability, not availability. Two misses:
+
+1. The `Description` column supports a partial crosswalk (asphltmm→asphaltum,
+   metseqah→metasequoia, torbanit→torbanite). So "no public artifact links them"
+   is false.
+2. I keyed on `Cleaves (2023) #` (54 non-null) when the `Source` column is more
+   complete and shows **135** Cleaves-sourced samples.
+
+**Corrected:** ~160 of 406 (~40%) are obtainable with manual name reconciliation,
+not 11 (3%). The real gap is that ~271 samples come from other collections
+(Cody, Summons, Hazen, Knoll, …) with ~28 public raw files, and that 76 of 82
+Archean samples are in that undeposited group.
+
+**How it was caught:** the user asked me to actually check the URLs instead of
+restating the claim.
+
+**Why this one stings:** I had explicitly argued this finding was safer than the
+project's three earlier artifacts *because* it was "a count, not an inference."
+It was a count of the wrong quantity. A number being checkable does not make it
+the right number, and "verifiable" is not the same as "verified."

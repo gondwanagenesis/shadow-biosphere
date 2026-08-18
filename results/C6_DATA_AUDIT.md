@@ -1,81 +1,82 @@
-# C6b / C6d — BLOCKED, with a quantified reason
+# C6b / C6d — blocked, with a CORRECTED reason
 
-**The agnostic-biosignature classifier literature publishes its labels and its
-code, but there is no public crosswalk from either to the deposited raw data.**
-Audit run 2026-08-18.
+> **This file was rewritten on 2026-08-18 after its first version was checked and
+> found wrong.** The original claimed "only 11 of 406 labelled samples (3%) have
+> public raw data" and that "no public artifact links deposited spectra to
+> published labels." Both statements were overstated. Corrected figures below;
+> the error is logged in `AMENDMENTS.md`.
 
-## The numbers
+## What the first version got wrong
+
+The 3% figure came from **automated exact-filename matching** between the label
+table and the downloaded files. That measures whether the two join *without
+human effort*. It does not measure whether the data is available.
+
+Two things it missed:
+
+1. **A partial crosswalk IS derivable from public data.** The label table has a
+   `Description` column, and the Cleaves deposit uses descriptive filenames.
+   `asphltmm`→asphaltum, `metseqah`→metasequoia, `torbanit`→torbanite,
+   `cannelco`→cannel coal are unambiguous. About 17 match at a strict automated
+   threshold.
+2. **The `Source` column exists and is more complete** than the
+   `Cleaves (2023) #` column I keyed on. It shows **135 of 406** samples come
+   from the Cleaves collection, not 54.
+
+## Corrected numbers
 
 | | |
 |---|---|
-| Labelled samples in the public ST01 table | **406** |
-| Unique raw py-GC-MS files publicly downloadable | **229** |
-| Samples with **both** a public label and public raw data | **11 (3%)** |
+| Labelled samples in the public ST01 table | 406 |
+| From the **Cleaves** collection (141 raw files public) | **135 (33%)** |
+| From other collections (Cody 47, Summons 38, Hazen 32, Knoll 29, Alexander 19, Saul 18, Boyce 16, …) | **271 (67%)** |
+| Public raw spectra for those other collections | **~28** (10 in OSF G93CS + 18 non-MIX Slaughter files) |
+| **Best-case obtainable with manual name reconciliation** | **~160 of 406 (~40%)** |
 
 Deep time, which C6d needs:
 
-| | in label table | with public raw data |
-|---|---|---|
-| > 541 Ma | 141 | **2** |
-| > 2500 Ma (Archean) | 82 | **1** |
+| | |
+|---|---|
+| Archean samples (>2500 Ma) in the label table | 82 |
+| Of those, from the Cleaves collection | **6** |
 
-Per class, labelled vs. actually usable: Living 153→4, Plant 106→3,
-Microbial 87→1, Fossil 131→3, Meteorite 42→1, Synthetic 36→5, Animal 32→**0**.
+## The corrected finding
 
-## What is and isn't public
+The reproducibility gap is real but narrower and differently located than first
+stated:
 
-Everything below is public and was retrieved successfully:
+> Roughly **two-thirds of the training set's raw spectra are not publicly
+> deposited**, concentrated in the newer non-Cleaves collections. The Archean
+> subset — the part most relevant to a deep-time search — is almost entirely in
+> that undeposited majority (6 of 82 from the collection whose data is public).
 
-- **Labels**: `PrabhuLab/PyGCMS-Biosign-ML` → `AttributeData/…ST01…xlsx`, 406 rows
-  with nine class indicators plus **AGE (Ma)**.
-- **Code**: same repo, the R model scripts.
-- **Raw data, in three disconnected subsets**: Cleaves 2023 (OSF `EMBH8`, 141
-  files), Hystad 16 new files, Slaughter 2025 (79 files), G93CS (10 files).
+And a softer, still-true point about the part that *is* public: linking it to the
+labels requires name reconciliation through the `Description` column, which is
+error-prone. Fuzzy matching produces confident false pairs — `ecoli1`→coal,
+`citron`→chitin, `collagen`→coal slag, `hair`→haircap moss. Anyone reconstructing
+this crosswalk automatically will introduce label noise without noticing.
 
-The gap is the **crosswalk**. The label table indexes samples as `CW001`,
-`LIV020`, `RMH0004`, `MET026`. The largest public raw archive — the 141 Cleaves
-files — uses descriptive names (`Ecoli13d.txt`, `Allende3d.txt`, `barley3d.txt`).
-The table carries a `Cleaves (2023) #` column, but that is an integer index into
-the 2023 paper's own SI numbering, and no public file maps those integers to the
-descriptive filenames.
+## What is not claimed
 
-Of the 79 Slaughter files, 61 are `MIX-*` — the biotic/abiotic *mixture* samples
-from the 2026 Frontiers study, not training samples.
-
-## Being fair about the claim
-
-This is **not** evidence that data was withheld. Many of the 141 Cleaves files
-are very likely among the 406 labelled samples, under their older names. The
-accurate statement is narrower and still consequential:
-
-> No public artifact links the deposited raw spectra to the published labels, so
-> the published models cannot be independently reproduced or audited from public
-> data alone.
-
-Resolving it needs one crosswalk file, or a request to the authors.
+Not that data was withheld. Not that the papers are wrong. Not that the models
+are unreliable. The deposits that exist are real, public, and were retrieved
+successfully here. This is an observation about how much of a 406-sample training
+set an outsider can reassemble, and the answer is roughly 40% with effort rather
+than the 3% first reported.
 
 ## Consequence for this project
 
-- **C6b** (shadow conjunction: called BIOTIC, no canonical biomarkers, no
-  sequence) — **blocked**. Needs reliable class labels on samples whose raw data
-  is in hand. n=11 cannot support it.
-- **C6d** (deep time) — **blocked, and worse**. The reframe holds: an *extinct*
-  shadow biosphere has a materially higher prior than an extant one, since the
-  standard argument against extant life is 4 Gyr of competition, which says
-  nothing about a lineage that existed and died on an Earth with no incumbent.
-  The label table has 82 Archean samples. **One** has public raw data.
-- **C6a** stands, on the 52 filename-reconstructed labels. Its verdict
-  (generalizes, 9.3 pp) is unaffected, but its label caveat cannot be removed
-  from public data.
+- **C6b** — still blocked. ~160 reconstructable samples with noisy labels is not
+  a sound basis for a conjunction search, though it is far better than 11.
+- **C6d** — still blocked, and this is the firmer half of the finding. 6 of 82
+  Archean samples have public raw data.
+- **C6a** — unaffected.
 
-## The fourth quantified aperture
+## Reproduce this audit
 
-C1 measured 18.0% of particles discarded at curation. C2 found AAR archives
-report exactly the amino acids that cannot discriminate. C6c found a novelty
-metric that hits AUC 1.000 on pure covariance degeneracy.
-
-This is the fourth, and it is the sharpest: **the tool the field trusts most for
-biochemistry-independent life detection cannot currently be audited by an
-outsider using public data.** For a method whose entire selling point is that it
-does not presuppose our biochemistry, whether it has quietly memorized our
-biochemistry is exactly the question outsiders should be able to check.
+```
+gh repo clone PrabhuLab/PyGCMS-Biosign-ML
+# AttributeData/2025-WongPrabhu-SupllementaryTable-ST01-07MAY.xlsx  -> 406 rows
+# Source column: Cleaves 135, Cody 47, Summons 38, Hazen 32, Knoll 29, ...
+# OSF EMBH8 -> 141 raw files;  OSF G93CS -> 10 raw files
+```
