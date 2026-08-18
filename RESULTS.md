@@ -15,7 +15,7 @@ Run 2026-08-18. Honest status of all five channels, including what was not done.
 | C6c residual mining | ✅ same archive | ✅ | ❌ fails by 2 pp | **INCONCLUSIVE** — archive too small |
 | C6b conjunction | ❌ ~160 of 406 reconstructable, noisy | ⬜ | — | **BLOCKED** — see corrected audit |
 | C6d deep time | ❌ 6 of 82 Archean have public raw data | ⬜ | — | **BLOCKED** — firmest half of the finding |
-| C7 amino-acid alphabet | ⬜ | ⬜ | — | Not run |
+| C7 amino-acid alphabet | n/a | n/a | — | **KILLED ON DESIGN** — AIB/isovaline are fungal peptaibol markers |
 | C8 electrochemical | ⬜ | ⬜ | — | Not run |
 
 **No channel has produced a shadow-life candidate.**
@@ -101,6 +101,23 @@ therefore useful as a **canonical-P reference distribution** rather than as an
 environmental search set. Acquisition path is clear; the run was not done.
 
 ---
+
+## The strongest conclusion so far
+
+Three channels have now died by the same mechanism: the proposed shadow marker
+turns out to be something canonical life already produces. D-amino acids come
+from peptidoglycan and racemases (C2). Non-protein amino acids like AIB and
+isovaline come from fungal peptaibols (C7). And the agnostic classifier
+generalizes across canonical diversity rather than keying on a narrow signature
+(C6a).
+
+**The "canonical life" null hypothesis is far wider than shadow-biosphere
+detection schemes assume.** These schemes are built against a caricature — the 20
+protein amino acids, L-only, phosphate backbone — and Earth's real biosphere
+routinely operates outside it. This predicts that *any* purely chemical shadow
+marker will have much less discriminating power than it appears to, and argues
+for moving toward relational or organisational signatures, where the canonical
+null is genuinely narrow.
 
 ## Meta-finding
 
