@@ -1,0 +1,118 @@
+{
+  "positive_control_passed": true,
+  "verdict": "KILLED - no rate-ordering violation carried by non-canonical-D amino acids",
+  "n_samples_total": 1380,
+  "n_qualifying_violations": 0,
+  "datasets": [
+    {
+      "source": "pangaea_54730.tab",
+      "n_amino_acids": 0,
+      "amino_acids": [],
+      "skipped": "fewer than 4 amino acids"
+    },
+    {
+      "source": "pangaea_757460.tab",
+      "n_amino_acids": 0,
+      "amino_acids": [],
+      "skipped": "fewer than 4 amino acids"
+    },
+    {
+      "source": "pangaea_808545.tab",
+      "amino_acids": [
+        "ala",
+        "asp",
+        "leu",
+        "val"
+      ],
+      "n_samples": 4,
+      "median_rho": 0.7999999999999999,
+      "mean_rho": 0.7999999999999999,
+      "frac_following_kinetics": 1.0,
+      "n_violations": 0,
+      "n_violations_clean_aa": 0,
+      "violations": []
+    },
+    {
+      "source": "pangaea_810152.tab",
+      "n_amino_acids": 1,
+      "amino_acids": [
+        "asp"
+      ],
+      "skipped": "fewer than 4 amino acids"
+    },
+    {
+      "source": "pangaea_832120.tab",
+      "n_amino_acids": 2,
+      "amino_acids": [
+        "asp",
+        "glu"
+      ],
+      "skipped": "fewer than 4 amino acids"
+    },
+    {
+      "source": "pangaea_838975.tab",
+      "n_amino_acids": 3,
+      "amino_acids": [
+        "asp",
+        "glu",
+        "ser"
+      ],
+      "skipped": "fewer than 4 amino acids"
+    },
+    {
+      "source": "pangaea_888699.tab",
+      "amino_acids": [
+        "ala",
+        "asp",
+        "glu",
+        "ile",
+        "leu",
+        "val"
+      ],
+      "n_samples": 6,
+      "median_rho": 0.8544888513069288,
+      "mean_rho": 0.8084828456572483,
+      "frac_following_kinetics": 1.0,
+      "n_violations": 0,
+      "n_violations_clean_aa": 0,
+      "violations": []
+    },
+    {
+      "source": "pangaea_901651.tab",
+      "amino_acids": [
+        "ala",
+        "asp",
+        "glu",
+        "ser"
+      ],
+      "n_samples": 1370,
+      "median_rho": 0.6000000000000001,
+      "mean_rho": 0.6566079442517522,
+      "frac_following_kinetics": 0.9744525547445255,
+      "n_violations": 35,
+      "n_violations_clean_aa": 0,
+      "violations": []
+    },
+    {
+      "source": "pangaea_901675.tab",
+      "n_amino_acids": 2,
+      "amino_acids": [
+        "asp",
+        "glu"
+      ],
+      "skipped": "fewer than 4 amino acids"
+    },
+    {
+      "source": "zenodo_17583785_AAR.xlsx::MIS 5e",
+      "n_amino_acids": 0,
+      "amino_acids": [],
+      "skipped": "fewer than 4 amino acids"
+    },
+    {
+      "source": "zenodo_17583785_AAR.xlsx::Holocene",
+      "n_amino_acids": 0,
+      "amino_acids": [],
+      "skipped": "fewer than 4 amino acids"
+    }
+  ]
+}

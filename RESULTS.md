@@ -7,14 +7,13 @@ Run 2026-08-18. Honest status of all five channels, including what was not done.
 | Channel | Data acquired | Test run | Positive control | Verdict |
 |---|---|---|---|---|
 | C1 cytometry | ✅ 107M particles, 12 cruises | ✅ | ✅ passed 6/11 | **KILLED** by pre-registered criterion |
-| C2 racemization | ⬜ sources audited | ⬜ | — | Not run |
+| C2 racemization | ✅ 1,380 samples, 10 datasets | ✅ | ✅ rho=+0.80 | **KILLED** (underpowered: 10 informative samples) |
 | C3 metabolomics | ⬜ 4 of 8 APIs broken | ⬜ | — | Blocked |
 | C4 Raman | ⬜ no public D₂O archive found | ⬜ | — | Blocked |
 | C5 single-cell XRF | ⬜ sources audited | ⬜ | — | Not run |
 
-**No channel produced a shadow-life candidate. One channel is closed. Four are
-open, and three of those are open because of data access, not because of the
-science.**
+**No channel produced a shadow-life candidate. Two channels are closed. Three
+remain open, and all three are open because of data access rather than science.**
 
 ---
 
@@ -45,17 +44,28 @@ designed needs DNA-stained benchtop cytometry. BATS, the natural source, returne
 HTTP 522 for the whole run. **C1 as executed is a weaker test than C1 as
 designed, and the designed version remains open.**
 
-## C2 — not run
+## C2 — KILLED (underpowered)
 
-Sources audited. Zenodo returns 26 records for "amino acid racemization"; PANGAEA
-23; Dryad 4. NOAA NCEI responds. Neotoma timed out, EarthChem's documented API
-404s.
+Full write-up: [results/C2_RESULT.md](results/C2_RESULT.md).
 
-Blocking issue is structural rather than technical: most D/L data lives in
-supplementary tables of papers, and the highest-value target — samples AAR labs
-*rejected* as diagenetically altered — is largely unpublished. Progressing this
-means writing to the Amino Acid Geochronology Laboratory (NAU) and equivalents,
-which is outside what an archive-only run can do unaided.
+1,380 samples across 10 datasets. Positive control passed at median rho = +0.80,
+and 100% of samples in the two widest-suite datasets follow racemization
+kinetics. **Zero qualifying violations.**
+
+The kill is weak and the reason is the finding. The pre-registration restricted
+qualifying violations to D-Leu, D-Val, D-Ile and D-Phe, because D-Ala and D-Glu
+come from peptidoglycan and D-Asp and D-Ser have canonical racemases. **Only 10
+of 1,380 samples carry two or more of those informative amino acids.** The
+1,370-sample dataset reports only canonically-producible D forms, so it cannot
+support a shadow reading whatever it shows; its 35 rate-ordering violations were
+excluded by the pre-registered restriction rather than by judgement.
+
+**Second measured aperture.** AAR archives are structurally near-blind to this
+test. The field measures Asx and Glx because they are good Quaternary clocks, and
+those are exactly the amino acids whose D forms canonical life already makes. The
+slow racemizers that would carry an unambiguous signal are rarely reported
+because they are poor clocks. The archive is optimized against the measurement
+this channel needs.
 
 ## C3 — blocked
 
