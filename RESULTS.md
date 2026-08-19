@@ -1,6 +1,8 @@
 # Results
 
 > **All eight channels are now resolved.** Synthesis in [CONCLUSIONS.md](CONCLUSIONS.md).
+> Every test was then adversarially audited: [AUDIT.md](AUDIT.md). One real
+> problem found (C1 control asymmetry), resolved with a measured detection limit.
 
 Run 2026-08-18. Honest status of all five channels, including what was not done.
 
@@ -8,7 +10,7 @@ Run 2026-08-18. Honest status of all five channels, including what was not done.
 
 | Channel | Data acquired | Test run | Positive control | Verdict |
 |---|---|---|---|---|
-| C1 cytometry | ✅ 107M particles, 12 cruises | ✅ | ✅ passed 6/11 | **KILLED** by pre-registered criterion |
+| C1 cytometry | ✅ 107M particles, 12 cruises | ✅ | ✅ 6/11 fsc; abundance validated by injection | **KILLED** — no diel above ~0.25 sd |
 | C2 racemization | ✅ 1,380 samples, 10 datasets | ✅ | ✅ rho=+0.80 | **KILLED** (underpowered: 10 informative samples) |
 | C3 metabolomics | ⬜ 4 of 8 APIs broken | ⬜ | — | Blocked |
 | C4 Raman | ⬜ no public D₂O archive found | ⬜ | — | Blocked |

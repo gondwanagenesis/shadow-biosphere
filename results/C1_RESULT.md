@@ -71,6 +71,36 @@ morning. It does, at 5.6 h.
 The one cruise showing a signal shows it with the exact phase the artifact
 hypothesis predicts. This is a clean kill, not an ambiguous one.
 
+## AUDIT ADDENDUM (2026-08-19) — control asymmetry, and a measured detection limit
+
+Two things surfaced in the post-hoc audit (`AUDIT.md`, A3 and A4).
+
+**Problem found.** The pre-registered gate validates the *mean forward scatter*
+channel (6/11 cruises). But the headline result above is carried by the
+*abundance-fraction* channel, and Prochlorococcus abundance passes that same gate
+in only **2 of 11 cruises** — below the pre-registered threshold of 3. The channel
+carrying the reported null did not meet the project's own validation bar, and
+that was not noticed when this file was first written.
+
+**Resolved by injection recovery, not by argument.** A synthetic 24 h signal of
+known amplitude and phase was injected into the real unknown-fraction series
+(`channels/c1_cytometry/audit_injection.py`):
+
+| injected amplitude | recovered at 24.0 h, FAP < 1e-3 |
+|---|---|
+| 0.50 x series sd | **6 / 6 cruises** |
+| 0.25 x series sd | **5 / 6 cruises** |
+| 0.10 x series sd | 2 / 6 cruises |
+
+Phase error < 2 h in every recovered case. The abundance channel has real
+sensitivity. This is a stronger validation than the original gate because it
+tests the exact channel and statistic used for the reported result.
+
+**The null is therefore quantified, not assumed:**
+
+> C1 found no diel signal in the discarded gate **above about 0.25 x the series
+> standard deviation**. It is not sensitive to signals at 0.10 x sd.
+
 ## What this does and does not establish
 
 It establishes that the discarded SeaFlow gate does not behave like an

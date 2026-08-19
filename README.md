@@ -10,7 +10,8 @@ failure.
 **Status: all 8 channels resolved — 4 killed, 1 inconclusive, 3 blocked with
 specific reasons. Zero shadow-life candidates, as expected. The result is an
 account of why archive-based detection fails, in three distinct modes.**
-Read [CONCLUSIONS.md](CONCLUSIONS.md) first. See [RESULTS.md](RESULTS.md).
+Read [CONCLUSIONS.md](CONCLUSIONS.md) first. See [RESULTS.md](RESULTS.md) and
+the adversarial self-audit in [AUDIT.md](AUDIT.md).
 
 ---
 
@@ -91,6 +92,7 @@ AMENDMENTS.md           every deviation, with reasons
 METHOD.md               aperture/filter framework, conjunction operator
 RESULTS.md              status of all eight channels
 GAPS.md                 literature sweep: what the original design missed
+AUDIT.md                adversarial self-audit of every test
 data_sources/           probe_sources.py + SOURCES.md (36 endpoints audited)
 channels/cN_*/          fetch + run scripts per channel
 results/                committed derived results

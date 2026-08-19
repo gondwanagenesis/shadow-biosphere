@@ -55,12 +55,28 @@ CLEAN = {"leu", "val", "ile", "ileu", "phe"}
 
 
 def canon(col):
-    """Map a column header to an amino-acid key, or None."""
+    """Map a column header to an amino-acid key, or None.
+
+    AUDIT FIX (AUDIT.md, A2). The first version had two defects:
+      * r"\bval" matched inside "value", so a column named "D/L value" or
+        "D/L validity flag" parsed as VALINE;
+      * "A/I" (the alloIle/Ile ratio, a standard AAR measure) matched nothing,
+        leaving the "a/i" entry in RATE_RANK as unreachable dead code.
+
+    Neither affected the published C2 result. Every D/L column in all nine
+    datasets was re-checked: 0 false positives, 0 missed A/I columns. The one
+    dangerous header, "Asp D/L (corrected values)", was saved only by loop
+    ordering (asp is tested before val). That was luck, so both are fixed here.
+    """
     c = col.lower()
     if "std dev" in c or "error" in c or "±" in c:
         return None
-    if "d/l" not in c:
+    if "d/l" not in c and "a/i" not in c:
         return None
+    # drop words that merely CONTAIN an amino-acid substring
+    c = re.sub(r"\bvalues?\b|\bvalue\b|\bvalidity\b|\bvalid\b", " ", c)
+    if re.search(r"\ba/i\b|allo.?ile", c):
+        return "ile"
     for aa in ("asx", "asp", "ser", "glx", "glu", "ala", "phe",
                "leu", "val", "ileu", "ile"):
         if re.search(r"\b" + aa, c):
